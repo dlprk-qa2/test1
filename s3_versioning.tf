@@ -17,15 +17,5 @@ resource "aws_s3_bucket" "examplebucketver" {
     enabled = false
   }
 }
-resource "aws_s3_bucket" "examplebucketun" {
-  bucket = "examplebuckettftest"
-  acl    = "public-read-write"
-  versioning {
-    enabled = true
-  }
-  logging {
-    target_bucket = aws_s3_bucket.log_bucket.id
-    target_prefix = "log/"
-    }
-}
+
 

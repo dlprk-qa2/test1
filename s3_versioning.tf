@@ -17,7 +17,7 @@ resource "aws_s3_bucket" "examplebucketver" {
     enabled = false
   }
 }
-esource "aws_s3_bucket" "examplebucketun" {
+resource "aws_s3_bucket" "examplebucketun" {
   bucket = "examplebuckettftest"
   acl    = "public-read-write"
   versioning {

@@ -12,7 +12,7 @@ provider "aws" {
   profile = "default"
   region  = "us-west-2"
 }
-resource "aws_s3_bucket" "logging" {
+resource "aws_s3_bucket" "logging1" {
   bucket = "examplebuckettftest"
   acl    = "private"
   versioning {
